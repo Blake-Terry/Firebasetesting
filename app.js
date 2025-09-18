@@ -199,7 +199,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     refreshUI();
   });
   resetBtn.addEventListener('click', async ()=>{
-    if (!confirm('Reset this week\'s bookings?')) return;
+    if (!confirm("Reset this week's bookings?")) return;
     const weekKey = weekKeyForDate(currentWeekStart);
     await saveBookings(weekKey,{});
     refreshUI();
@@ -214,5 +214,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   refreshUI();
 
 });
+
 
 
